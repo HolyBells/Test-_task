@@ -1,0 +1,5 @@
+SELECT t1.*
+FROM article AS t1 LEFT JOIN COMMENT AS t2 ON t1.id = t2.article_id
+WHERE t2.article_id IS NULL
+
+http://sqlfiddle.com/#!17/84c62/4332
